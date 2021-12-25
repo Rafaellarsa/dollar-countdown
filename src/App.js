@@ -3,15 +3,15 @@ import "./App.css";
 import Card from "./components/Card.js";
 
 function App() {
-  const [timerDays, setTimerDays] = useState();
-  const [timerHours, setTimerHours] = useState();
-  const [timerMinutes, setTimerMinutes] = useState();
-  const [timerSeconds, setTimerSeconds] = useState();
+  const [timerDays, setTimerDays] = useState(0);
+  const [timerHours, setTimerHours] = useState(0);
+  const [timerMinutes, setTimerMinutes] = useState(0);
+  const [timerSeconds, setTimerSeconds] = useState(0);
 
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("December 1, 2021").getTime();
+    const countDownDate = new Date("December 31, 2021 23:59:59").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();

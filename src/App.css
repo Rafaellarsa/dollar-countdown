@@ -40,3 +40,23 @@ h2 {
   gap: 0.5em;
   width: 60%;
 }
+
+@media (max-width: 768px) {
+  .App {
+    height: auto;
+    background-size: 60%;
+  }
+
+  .main-container {
+    gap: 0;
+    padding: 0;
+  }
+
+  .main {
+    display: block;
+  }
+
+  h2 {
+    padding: 0 2rem;
+  }
+}
